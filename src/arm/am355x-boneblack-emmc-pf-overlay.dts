@@ -59,3 +59,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4_pins>;
 };
+
+&pruss {
+	status = "disabled";
+};
