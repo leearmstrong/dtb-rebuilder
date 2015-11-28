@@ -52,16 +52,16 @@
 	
 };
 
-/*
-pps {
-	compatible = "pps-gpio";
-	gpios = <&gpio3 19 0>;
-	assert-rising-edge;
-	pinctrl-names = "default";
-	pinctrl-0 = <&gps_pps_pins>;
-	status = "okay";
+&ocp {
+	pps {
+		compatible = "pps-gpio";
+		gpios = <&gpio3 19 0>;
+		assert-rising-edge;
+		pinctrl-names = "default";
+		pinctrl-0 = <&gps_pps_pins>;
+		status = "okay";
+	};
 };
-*/
 
 &uart2 {
 	compatible = "ti,omap3-uart";
@@ -76,7 +76,6 @@ pps {
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4_pins>;
 };
-
 
 &pruss {
 	status = "disabled";
