@@ -46,16 +46,18 @@
 
 	gps_pps_pins: pinmux_gps_pps_pins {
 		pinctrl-single,pins = <
-			BONE_P9_27 (MUX_MODE7)
+			BONE_P9_27 (PIN_INPUT | MUX_MODE7)
 		>;
 	};
 	
 };
 
-&pps {
+pps {
 	compatible = "pps-gpio";
 	gpios = <&gpio3 19 0>;
 	assert-rising-edge;
+	pinctrl-names = "default";
+	pinctrl-0 = <&gps_pps_pins>;
 };
 
 &uart2 {
