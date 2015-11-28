@@ -67,3 +67,7 @@
 &pruss {
 	status = "disabled";
 };
+
+&wkup_m3 {
+	status = "disabled";
+};
