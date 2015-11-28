@@ -28,7 +28,9 @@
 	status = "okay";
 };
 
-&tps {  /delete-property/ ti,pmic-shutdown-controller;  }
+&tps {  
+/delete-property/ ti,pmic-shutdown-controller;  
+}
 
 &am33xx_pinmux {
 
