@@ -52,6 +52,7 @@
 	
 };
 
+/*
 pps {
 	compatible = "pps-gpio";
 	gpios = <&gpio3 19 0>;
@@ -60,6 +61,7 @@ pps {
 	pinctrl-0 = <&gps_pps_pins>;
 	status = "okay";
 };
+*/
 
 &uart2 {
 	compatible = "ti,omap3-uart";
