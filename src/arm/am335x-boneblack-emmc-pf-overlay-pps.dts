@@ -58,6 +58,7 @@ pps {
 	assert-rising-edge;
 	pinctrl-names = "default";
 	pinctrl-0 = <&gps_pps_pins>;
+	status = "okay";
 };
 
 &uart2 {
