@@ -28,6 +28,8 @@
 	status = "okay";
 };
 
+&tps {  /delete-property/ ti,pmic-shutdown-controller;  }
+
 &am33xx_pinmux {
 
 	bb_uart2_pins: pinmux_bb_uart2_pins {
