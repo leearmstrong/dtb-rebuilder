@@ -52,7 +52,7 @@
 	
 };
 
-pps {
+&pps {
 	compatible = "pps-gpio";
 	gpios = <&gpio3 19 0>;
 	assert-rising-edge;
