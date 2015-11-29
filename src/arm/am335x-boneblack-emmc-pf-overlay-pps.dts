@@ -64,14 +64,12 @@
 };
 
 &uart2 {
-	compatible = "ti,omap3-uart";
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart2_pins>;
 };
 
 &uart4 {
-	compatible = "ti,omap3-uart";
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4_pins>;
