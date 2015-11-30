@@ -67,6 +67,7 @@
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart2_pins>;
+	compatible = "ns16550";
 };
 
 &uart4 {
