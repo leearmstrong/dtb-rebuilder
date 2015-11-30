@@ -68,7 +68,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart2_pins>;
 	compatible = "ns16550";
-	fifo-size = "255";
+	fifo-size = <255>;
 };
 
 &uart4 {
