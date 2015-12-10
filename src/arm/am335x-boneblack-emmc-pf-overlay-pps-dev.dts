@@ -70,6 +70,7 @@
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart2_pins>;
+	fifosize = <128>;
 };
 
 &uart4 {
