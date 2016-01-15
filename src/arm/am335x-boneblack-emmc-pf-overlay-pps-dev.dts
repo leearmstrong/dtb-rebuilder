@@ -2,6 +2,7 @@
 
 #include "am33xx.dtsi"
 #include "am335x-bone-common.dtsi"
+#include "am33xx-overlay-edma-fix.dtsi"
 #include <dt-bindings/board/am335x-bbw-bbb-base.h>
 #include <dt-bindings/pinctrl/am33xx.h>
 
@@ -75,4 +76,16 @@
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart4_pins>;
+};
+
+&pruss {
+	status = "disabled";
+};
+
+&wkup_m3 {
+	status = "disabled";
+};
+
+&wkup_m3_ipc {
+	status = "disabled";
 };
